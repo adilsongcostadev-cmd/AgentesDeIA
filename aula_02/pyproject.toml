@@ -1,0 +1,26 @@
+[project]
+name = "aual-02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JuniorPrado-dev", email = "juniorcvnnn@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "groq>=1.7.0",
+    "langchain-groq>=1.2.1",
+    "langgraph>=1.2.22",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+aual-02 = "aual_02:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
